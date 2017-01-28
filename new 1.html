@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<title>WBA Uebungsseite</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	
+	<body>
+		<nav>
+			<ul>
+				<li>Punkt 1</li>
+				<li>Punkt 2</li>
+				<li>Punkt 3</li>
+			</ul>
+		</nav>
+		
+		<header id="head">
+			<h1>Willkommen auf WBA1 Uebung!</h1>
+			<p class="arrow-left"> <a href="#">&larr;</a></p>
+			<p class="arrow-right"><a href="#">&rarr;</a></p>
+		</header>
+		
+		<main>
+			<article>
+				<header>
+					<h3>Body Header</h3>
+				</header>
+				<section>
+					<p>Lorem ipsum dolor sid amet</p>
+					<p> Blabla noch mehr text weil wieso nicht.</p>
+					<p><img src="bild.jpg" alt="Ein Bild" /></p>
+					<p><button type="button" id="butone">Klick mich</button></p>
+					<p id="js"></p>
+				</section>
+			</article>
+		</main>
+	</body>
+	
+	<script type="text/javascript">
+			document.getElementById("butone").onclick = function(){
+			document.getElementById("js").append("Ich wude hinzugefuegt. ");
+			};
+		</script>
+</html>
